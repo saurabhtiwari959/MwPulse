@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b16c1efe-2ac2-4419-b208-a4138ea9798d" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="MWPulse_Feature1\Feature.xml" />
+    <FeatureManifest Location="MWPulse_Feature2\Feature.xml" />
+    <FeatureManifest Location="MWPulse_Feature3\Feature.xml" />
+    <FeatureManifest Location="MWPulse_Feature4\Feature.xml" />
+  </FeatureManifests>
+</Solution>

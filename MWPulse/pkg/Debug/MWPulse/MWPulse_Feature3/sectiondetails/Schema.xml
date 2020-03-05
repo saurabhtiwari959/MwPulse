@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="sectiondetails" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/sectiondetails" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100886465c75d754256b677985e563a6dbb" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{d6624952-924b-4d29-896c-4410f19429d9}" Name="rownumber" /><FieldRef ID="{0a21e699-ac6e-4d0e-8c68-4b2e84299e22}" Name="columnnumber" /><FieldRef ID="{dd17d1ec-9663-4f97-bc8a-24fc311d86bd}" Name="section" /><FieldRef ID="{4338fd7e-add4-40ef-958e-e5125dfde70e}" Name="month" /><FieldRef ID="{b6b6077a-1db1-45db-82cc-2b7a8c8b4ce8}" Name="textheading" /><FieldRef ID="{ba63c34e-160a-43a7-8476-c5e1406fd35a}" Name="textheadingprop" /><FieldRef ID="{3caf8c73-c274-4eeb-bad6-3e6bcabd6c75}" Name="text" /><FieldRef ID="{d87d3a5c-82f3-4c7c-a532-f458ac9b195f}" Name="textprop" /><FieldRef ID="{851e166f-7a01-46ee-a5da-fbb255cc578d}" Name="image" /><FieldRef ID="{87a535f7-d8ae-48b7-bc59-391a43fbe343}" Name="imageprop" /><FieldRef ID="{ed54d521-9178-4269-94b7-2e8ba78efd69}" Name="hyperlink" /><FieldRef ID="{a99e10ff-11dd-4c5f-9574-8093b2be86bd}" Name="rowprop" /><FieldRef ID="{44e46fcb-6d70-4831-9ce2-bd25da2079ff}" Name="columnprop" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Number" Name="Title" DisplayName="title" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="rownumber" ID="{d6624952-924b-4d29-896c-4410f19429d9}" DisplayName="rownumber" Type="Number" /><Field Name="columnnumber" ID="{0a21e699-ac6e-4d0e-8c68-4b2e84299e22}" DisplayName="columnnumber" Type="Number" /><Field Name="section" ID="{dd17d1ec-9663-4f97-bc8a-24fc311d86bd}" DisplayName="section" Type="Lookup" List="Lists/sections" ShowField="Title" /><Field Name="month" ID="{4338fd7e-add4-40ef-958e-e5125dfde70e}" DisplayName="month" Type="Lookup" List="Lists/months" ShowField="Title" /><Field Name="textheading" ID="{b6b6077a-1db1-45db-82cc-2b7a8c8b4ce8}" DisplayName="textheading" Type="Text" /><Field Name="textheadingprop" ID="{ba63c34e-160a-43a7-8476-c5e1406fd35a}" DisplayName="textheadingprop" Type="Text" /><Field Name="text" ID="{3caf8c73-c274-4eeb-bad6-3e6bcabd6c75}" DisplayName="text" Type="Text" /><Field Name="textprop" ID="{d87d3a5c-82f3-4c7c-a532-f458ac9b195f}" DisplayName="textprop" Type="Text" /><Field Name="image" ID="{851e166f-7a01-46ee-a5da-fbb255cc578d}" DisplayName="image" Type="URL" Format="Image" /><Field Name="imageprop" ID="{87a535f7-d8ae-48b7-bc59-391a43fbe343}" DisplayName="imageprop" Type="Text" /><Field Name="hyperlink" ID="{ed54d521-9178-4269-94b7-2e8ba78efd69}" DisplayName="hyperlink" Type="URL" /><Field Name="rowprop" ID="{a99e10ff-11dd-4c5f-9574-8093b2be86bd}" DisplayName="rowprop" Type="Text" /><Field Name="columnprop" ID="{44e46fcb-6d70-4831-9ce2-bd25da2079ff}" DisplayName="columnprop" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="rownumber" /><FieldRef Name="columnnumber" /><FieldRef Name="section" /><FieldRef Name="month" /><FieldRef Name="textheading" /><FieldRef Name="textheadingprop" /><FieldRef Name="text" /><FieldRef Name="textprop" /><FieldRef Name="image" /><FieldRef Name="imageprop" /><FieldRef Name="hyperlink" /><FieldRef Name="rowprop" /><FieldRef Name="columnprop" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

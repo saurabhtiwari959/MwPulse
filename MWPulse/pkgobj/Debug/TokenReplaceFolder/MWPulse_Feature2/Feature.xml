@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="9385d214-10b5-4d18-a63f-d02e429f1ba9" Scope="Web" Title="MWPulse Feature2" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="sections\Elements.xml" />
+    <ElementFile Location="sections\Schema.xml" />
+    <ElementManifest Location="sectionsInstance\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="sections\Elements.xml" />
+        <ElementManifest Location="sectionsInstance\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

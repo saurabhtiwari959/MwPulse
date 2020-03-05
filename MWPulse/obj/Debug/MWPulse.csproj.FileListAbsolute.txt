@@ -1,0 +1,4 @@
+D:\Projects\Newsletter_Sharepoint\MWPulse\MWPulse\bin\Debug\MWPulse.pdb
+D:\Projects\Newsletter_Sharepoint\MWPulse\MWPulse\obj\Debug\MWPulse.csprojAssemblyReference.cache
+D:\Projects\Newsletter_Sharepoint\MWPulse\MWPulse\obj\Debug\MWPulse.dll
+D:\Projects\Newsletter_Sharepoint\MWPulse\MWPulse\obj\Debug\MWPulse.pdb
